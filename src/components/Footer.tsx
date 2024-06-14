@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { styled } from 'styled-components';
 
-const Footer = () => {
+const FooterWrapper = styled.section`
+  padding: 4em;
+  background: red;
+`;
+
+const Footer: React.FC = () => {
   return (
-    <div role='footer'>Footer</div>
+    <FooterWrapper role='footer'>
+
+    </FooterWrapper>
   )
 }
 
