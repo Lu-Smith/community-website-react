@@ -7,27 +7,31 @@ describe("Header component", () => {
     render(<Footer />);
   });
 
-  it("renders portfolio link correctly", () => {
+  it("renders portfolio link correctly", async () => {
     render(<Footer />);
 
-    const portfolioLink = screen.findAllByText(/Luna Smith/i);
+    const portfolioLink = await screen.findByText(/Luna Smith/i);
+    expect(portfolioLink).toBeInTheDocument();
     expect(portfolioLink).toBeVisible();
   });
 
-  it("renders GitHub link correctly", () => {
+  it("renders GitHub link correctly", async () => {
     render(<Footer />);
 
-    const GitHubLink = screen.findAllByText(/GitHub/i);
+    const GitHubLink = await screen.findByText(/GitHub/i);
+    expect(GitHubLink).toBeInTheDocument();
     expect(GitHubLink).toBeVisible();
   });
 
-  it("renders text correctly", () => {
+  it("renders text correctly", async () => {
     render(<Footer />);
 
-    const texElement1 = screen.findAllByText(/Coded by/i);
+    const texElement1 = await screen.findByText(/Coded by/i);
+    expect(texElement1).toBeInTheDocument();
     expect(texElement1).toBeVisible();
 
-    const texElement2 = screen.findAllByText(/open-source/i);
+    const texElement2 = await screen.findByText(/open-source/i);
+    expect(texElement2).toBeInTheDocument();
     expect(texElement2).toBeVisible();
   });
 });
