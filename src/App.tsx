@@ -1,9 +1,14 @@
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import Main from "./components/Main"
 
 const App = () => {
 
   return (
     <div className='App'>
-      <h1>Community Hub</h1>
+      <div className="headerComponent"><Header /></div>
+      <div className="mainComponent"><Main /></div>
+      <div className="footerComponent"><Footer /></div>
     </div>
   )
 }
