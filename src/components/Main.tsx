@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-const Main = () => {
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
+
+const Main: React.FC = () => {
   return (
-    <div role='main'>Main</div>
+    <Wrapper role='main'>
+        Main
+    </Wrapper>
   )
 }
 
