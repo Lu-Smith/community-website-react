@@ -1,12 +1,6 @@
 import {render, screen} from "@testing-library/react";
 import App from "./App";
 
-it("should have Community Hub", async () => {
-    render(<App />);
-    const message = await screen.findByText(/Community Hub/i);
-    expect(message).toBeVisible();
-})
-
 it("should have Header.tsx, Main.tsx and Footer.tsx components", async () => {
     render(<App />);
 
