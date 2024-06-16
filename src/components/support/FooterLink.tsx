@@ -17,11 +17,12 @@ interface FooterLinkProps {
   href: string;
   target: string;
   children: React.ReactNode;
+  role?: string;
 }
 
-const FooterLink: React.FC<FooterLinkProps> = ({ href, target, children }) => {
+const FooterLink: React.FC<FooterLinkProps> = ({ href, target, children, role }) => {
   return (
-    <FooterLinkElement href={href} target={target}>
+    <FooterLinkElement href={href} target={target} role={role}>
       {children}
     </FooterLinkElement>
   )
