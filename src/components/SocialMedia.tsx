@@ -15,13 +15,13 @@ const SocialMediaContainer = styled.div`
 const SocialMedia: React.FC = () => {
   return (
     <SocialMediaContainer>
-      <FooterLink href="//www.facebook.com/lunasmithart" target="_blank" aria-label="Facebook page">
+      <FooterLink href="//www.facebook.com/lunasmithart" target="_blank" aria-label="Facebook page" role="facebook" >
         <FaFacebook />
       </FooterLink>
-      <FooterLink href="//twitter.com/LuArtGallery" target="_blank" aria-label="Twitter page">
+      <FooterLink href="//twitter.com/LuArtGallery" target="_blank" aria-label="Twitter page" role="twitter" >
         <FaTwitter />
       </FooterLink>
-      <FooterLink href="//www.instagram.com/luartgallery" target="_blank" aria-label="Instagram page">
+      <FooterLink href="//www.instagram.com/luartgallery" target="_blank" aria-label="Instagram page" role="instagram" >
         <FaInstagram />
       </FooterLink>
     </SocialMediaContainer>
