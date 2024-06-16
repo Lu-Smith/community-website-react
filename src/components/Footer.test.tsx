@@ -50,4 +50,44 @@ describe("Header component", () => {
     expect(instagramLink).toBeInTheDocument();
     expect(instagramLink).toBeVisible();
   });
+
+  it("renders helpers links, and contact correctly", async () => {
+    render(<Footer />);
+
+    const contactContainer = await screen.findByTestId('contactContainer');
+    expect(contactContainer).toBeInTheDocument();
+    expect(contactContainer).toBeVisible();
+
+    const contactLink = await screen.findByRole('contactLink');
+    expect(contactLink).toBeInTheDocument();
+    expect(contactLink).toBeVisible();
+
+    const helpersContainer = await screen.findByTestId('helpersContainer');
+    expect(helpersContainer).toBeInTheDocument();
+    expect(helpersContainer).toBeVisible();
+
+    const homeLink = await screen.findByRole('homeLink');
+    expect(homeLink).toBeInTheDocument();
+    expect(homeLink).toBeVisible();
+
+    const faqLink = await screen.findByRole('faqLink');
+    expect(faqLink).toBeInTheDocument();
+    expect(faqLink).toBeVisible();
+
+    const aboutLink = await screen.findByRole('aboutLink');
+    expect(aboutLink).toBeInTheDocument();
+    expect(aboutLink).toBeVisible();
+
+    const careerLink = await screen.findByRole('careerLink');
+    expect(careerLink).toBeInTheDocument();
+    expect(careerLink).toBeVisible();
+
+    const blogLink = await screen.findByRole('blogLink');
+    expect(blogLink).toBeInTheDocument();
+    expect(blogLink).toBeVisible();
+
+    const supportLink = await screen.findByRole('supportLink');
+    expect(supportLink).toBeInTheDocument();
+    expect(supportLink).toBeVisible();
+  });
 });
