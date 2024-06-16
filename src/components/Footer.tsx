@@ -1,5 +1,7 @@
 import React from 'react';
-import { styled } from 'styled-components';
+import styled from 'styled-components';
+import SocialMedia from './SocialMedia';
+import FooterLink from './support/FooterLink';
 
 const FooterWrapper = styled.section`
   padding: 4em;
@@ -10,14 +12,10 @@ const FooterText = styled.h4`
   padding: 2em 4em;
 `;
 
-const FooterLink = styled.a`
-  color: black;
-  text-decoratins: none;
-`;
-
 const Footer: React.FC = () => {
   return (
     <FooterWrapper role='footer'>
+      <SocialMedia />
       <FooterText>
         Coded by
         <FooterLink href='https://www.lunasmithart.com' target='_blank'>Luna Smith</FooterLink>
