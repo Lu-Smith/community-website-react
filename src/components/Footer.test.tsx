@@ -49,6 +49,5 @@ describe("Header component", () => {
     const instagramLink = await screen.findByRole('instagram');
     expect(instagramLink).toBeInTheDocument();
     expect(instagramLink).toBeVisible();
-
   });
 });
