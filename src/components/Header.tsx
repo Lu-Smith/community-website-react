@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button';
+import Button from './support/Button';
 import Community from '../assets/media/community.svg';
 
 const HeaderWrapper = styled.section`
