@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SocialMedia from './SocialMedia';
 import FooterLink from './support/FooterLink';
+import FooterHelpers from './FooterHelpers';
 
 const FooterWrapper = styled.section`
   padding: 4em;
@@ -15,6 +16,7 @@ const FooterText = styled.h4`
 const Footer: React.FC = () => {
   return (
     <FooterWrapper role='footer'>
+      <FooterHelpers />
       <SocialMedia />
       <FooterText>
         Coded by
