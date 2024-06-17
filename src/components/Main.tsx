@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Data from '../assets/media/data.svg';
 
 const Wrapper = styled.section`
   padding: 4em;
@@ -18,6 +19,10 @@ const Content = styled.p`
   color: red;
 `;
 
+const Image = styled.img`
+  width: 300px;
+`;
+
 
 const Main: React.FC = () => {
   return (
@@ -27,8 +32,9 @@ const Main: React.FC = () => {
           Grow Together
         </Title>
         <Content role='content'>
-        Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
+          Generate  meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
         </Content>
+        <Image src={Data} alt='sector' role='image' />
       </SectorComponent>
     </Wrapper>
   )
