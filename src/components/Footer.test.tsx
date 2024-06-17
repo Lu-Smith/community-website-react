@@ -62,6 +62,14 @@ describe("Header component", () => {
     expect(contactLink).toBeInTheDocument();
     expect(contactLink).toBeVisible();
 
+    const phoneNumber = await screen.findByTestId('phoneNumber');
+    expect(phoneNumber).toBeInTheDocument();
+    expect(phoneNumber).toBeVisible();
+
+    const email = await screen.findByTestId('email');
+    expect(email).toBeInTheDocument();
+    expect(email).toBeVisible();
+
     const helpersContainer = await screen.findByTestId('helpersContainer');
     expect(helpersContainer).toBeInTheDocument();
     expect(helpersContainer).toBeVisible();
@@ -73,10 +81,6 @@ describe("Header component", () => {
     const faqLink = await screen.findByRole('faqLink');
     expect(faqLink).toBeInTheDocument();
     expect(faqLink).toBeVisible();
-
-    const aboutLink = await screen.findByRole('aboutLink');
-    expect(aboutLink).toBeInTheDocument();
-    expect(aboutLink).toBeVisible();
 
     const careerLink = await screen.findByRole('careerLink');
     expect(careerLink).toBeInTheDocument();
