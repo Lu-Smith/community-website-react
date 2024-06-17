@@ -15,4 +15,16 @@ describe("Main component", () => {
     expect(sectorComponent).toBeVisible();
   });
 
+  it("renders title and content correctly", async () => {
+    render(<Main />);
+
+    const titleElement = await screen.findByRole('title');
+    expect(titleElement).toBeInTheDocument();
+    expect(titleElement).toBeVisible();
+
+    const contentElement = await screen.findByRole('content');
+    expect(contentElement).toBeInTheDocument();
+    expect(contentElement).toBeVisible();
+  });
+
 });
