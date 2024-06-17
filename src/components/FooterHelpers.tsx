@@ -29,7 +29,6 @@ const ListLi = styled.li`
   color: purple;
 `;
 
-
 const FooterHelpers: React.FC = () => {
   return (
     <HelpersWrapper>
@@ -41,7 +40,7 @@ const FooterHelpers: React.FC = () => {
       <HelpersContainer data-testid='helpersContainer'>
         <ListLi role='homeLink'>About Us</ListLi>
         <ListLi role='faqLink'>FAQ</ListLi>
-        <ListLi role='careerLink'>Carrer</ListLi>
+        <ListLi role='careerLink'>Career</ListLi>
         <ListLi role='blogLink'>Blog</ListLi>
         <ListLi role='supportLink'>Support</ListLi>
       </HelpersContainer>
