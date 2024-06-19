@@ -5,13 +5,17 @@ import Data from '../assets/media/data.svg';
 const Wrapper = styled.section`
   padding: 4em;
   background: papayawhip;
-    display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 `;
 
 const SectorComponent = styled.div`
+  background-color: grey;
+`;
+
+const ContentContainer = styled.div`
   background-color: grey;
 
 `;
@@ -33,14 +37,16 @@ const Main: React.FC = () => {
   return (
     <Wrapper role='main'>
       <SectorComponent role='sector'>
-        <Title role='title'>
-          Grow Together
-        </Title>
-        <Content role='content'>
-          Generate  meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
-        </Content>
+        <ContentContainer>
+          <Title role='title'>
+            Grow Together
+          </Title>
+          <Content role='content'>
+            Generate  meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
+          </Content>
+        </ContentContainer>
+        <Image src={Data} alt='sector' role='image' />
       </SectorComponent>
-      <Image src={Data} alt='sector' role='image' />
     </Wrapper>
   )
 }
