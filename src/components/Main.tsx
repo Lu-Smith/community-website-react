@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Data from '../assets/media/data.svg';
+import content from '../assets/content';
 
 const Wrapper = styled.section`
   padding: 4em;
@@ -36,17 +36,19 @@ const Image = styled.img`
 const Main: React.FC = () => {
   return (
     <Wrapper role='main'>
-      <SectorComponent role='sector'>
-        <ContentContainer>
-          <Title role='title'>
-            Grow Together
-          </Title>
-          <Content role='content'>
-            Generate  meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
-          </Content>
-        </ContentContainer>
-        <Image src={Data} alt='sector' role='image' />
-      </SectorComponent>
+        {content.map((cont, index) => (
+          <SectorComponent role='sector' key={index}>
+            <ContentContainer>
+              <Title role='title'>
+                {cont.title}
+              </Title>
+              <Content role='content'>
+                {cont.content}
+              </Content>
+            </ContentContainer>
+            <Image src={cont.img} alt='sector' role='image' />
+          </SectorComponent>
+        ))}
     </Wrapper>
   )
 }
