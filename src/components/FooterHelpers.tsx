@@ -2,14 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HelpersWrapper = styled.div`
-  padding: 4em;
-  background: white;
+  padding: 1em;
   color: purple;
 `;
 
 const ContactContainer = styled.ul`
-  padding: 4em;
-  background: white;
+  padding: 1em;
   color: purple;
 `;
 
@@ -19,8 +17,7 @@ const ContactLi = styled.li`
 `;
 
 const HelpersContainer = styled.ul`
-  padding: 4em;
-  background: white;
+  padding: 1em;
   color: purple;
 `;
 
