@@ -8,8 +8,11 @@ import {
 import FooterLink from './support/FooterLink';
 
 const SocialMediaContainer = styled.div`
-  background-color: yellow;
-  color: white;
+  color: #f0ece2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SocialMedia: React.FC = () => {
