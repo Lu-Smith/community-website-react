@@ -3,27 +3,43 @@ import styled from 'styled-components';
 
 const HelpersWrapper = styled.div`
   padding: 1em;
-  color: purple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #f0ece2; 
+  background: #596e79;
 `;
 
 const ContactContainer = styled.ul`
-  padding: 1em;
-  color: purple;
+  list-style: none;
+  text-align: center;
 `;
 
 const ContactLi = styled.li`
-  background: yellow;
-  color: purple;
+  padding: 0.2em 0;
+  transition: 200ms all ease;
+  cursor: pointer;
+
+  &:hover {
+    color: black; 
+  }
 `;
 
 const HelpersContainer = styled.ul`
   padding: 1em;
-  color: purple;
+  list-style: none;
+  text-align: center;
 `;
 
 const ListLi = styled.li`
-  background: yellow;
-  color: purple;
+  color: #f0ece2;
+  transition: 200ms all ease;
+  cursor: pointer;
+
+  &:hover {
+    color: black; 
+  }
 `;
 
 const FooterHelpers: React.FC = () => {
