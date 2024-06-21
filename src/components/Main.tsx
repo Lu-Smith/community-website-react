@@ -51,6 +51,11 @@ const Main: React.FC = () => {
     <Wrapper role='main'>
         {content.map((cont, index) => (
           <SectorComponent role='sector' key={index}>
+            {!(index % 2)  ? 
+             <Image src={cont.img} alt='sector' role='image' />
+            :
+            ''
+            }
             <ContentContainer>
               <Title role='title'>
                 {cont.title}
@@ -59,7 +64,11 @@ const Main: React.FC = () => {
                 {cont.content}
               </Content>
             </ContentContainer>
-            <Image src={cont.img} alt='sector' role='image' />
+            {index % 2 ? 
+             <Image src={cont.img} alt='sector' role='image' />
+            :
+            ''
+            }
           </SectorComponent>
         ))}
     </Wrapper>
