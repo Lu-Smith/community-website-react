@@ -5,7 +5,7 @@ import FooterLink from './support/FooterLink';
 import FooterHelpers from './FooterHelpers';
 
 const FooterWrapper = styled.section`
-  border-radius: 50%;
+  
 `;
 
 const FooterText = styled.h4`
@@ -14,6 +14,7 @@ const FooterText = styled.h4`
   font-size: 14px;
   padding: 1em  0;
   color: #596e79; 
+  font-family: "Playwrite US Modern", cursive;
 `;
 
 const Footer: React.FC = () => {
