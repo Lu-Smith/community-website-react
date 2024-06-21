@@ -1,15 +1,20 @@
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Main from "./components/Main"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import styled from 'styled-components';
+
+const AppWrapper = styled.div`
+  background: #dfd3c3;
+`;
 
 const App = () => {
 
   return (
-    <div className='App'>
-      <div className="headerComponent"><Header /></div>
-      <div className="mainComponent"><Main /></div>
-      <div className="footerComponent"><Footer /></div>
-    </div>
+    <AppWrapper>
+      <div><Header /></div>
+      <div><Main /></div>
+      <div><Footer /></div>
+    </AppWrapper>
   )
 }
 
