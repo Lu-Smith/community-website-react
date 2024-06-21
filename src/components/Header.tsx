@@ -32,8 +32,10 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 1.5em;
-  color: #596e79; 
+  font-size: 1.8em;
+  color: black; 
+  text-align: left;
+  font-family: "Playwrite US Modern", cursive;
 `;
 
 const IntroContainer = styled.div`
@@ -41,8 +43,8 @@ const IntroContainer = styled.div`
 `;
 
 const IntroTitle = styled.h2`
-  font-size: 1.5em;
-  color: black;
+  font-size: 1.3em;
+  color: #596e79; 
 `;
 
 const IntroContent = styled.p`
