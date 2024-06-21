@@ -31,12 +31,12 @@ const ContentContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  color: black;
+  color: #596e79;
   margin-bottom: 10px;
 `;
 
 const Content = styled.p`
-  color: red;
+  color: black;
 `;
 
 const Image = styled.img`
