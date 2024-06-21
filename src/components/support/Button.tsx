@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ButtonElement = styled.button`
-  background: red;
-  color: white;
+	background: #596e79;
+  color: #f0ece2;
   font-size: 1em;
   margin: 1em;
   padding: 0.4em 1.2em;
@@ -14,7 +14,8 @@ const ButtonElement = styled.button`
   transition: 200ms all ease;
 
   &:hover {
-  box-shadow: none;
+    box-shadow: none;
+    background: black;
   }
 
 `;
