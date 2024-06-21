@@ -13,6 +13,7 @@ const SocialMediaContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 40px;
   font-size: 20px;
 `;
 
