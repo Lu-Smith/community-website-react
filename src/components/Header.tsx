@@ -5,7 +5,6 @@ import Community from '../assets/media/community.svg';
 
 const HeaderWrapper = styled.section`
   padding: 0.2em 0.5em;
-  background: purple;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,8 +14,7 @@ const HeaderWrapper = styled.section`
 `;
 
 const Container = styled.div`
-  padding: 0.5em;
-  background: pink;
+  padding: 1em 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,22 +33,21 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-size: 1.5em;
-  color: #BF4F74;
+  color: #596e79; 
 `;
 
 const IntroContainer = styled.div`
-  background-color: black;
   text-align: left;
 `;
 
 const IntroTitle = styled.h2`
   font-size: 1.5em;
-  color: #BF4F74;
+  color: black;
 `;
 
 const IntroContent = styled.p`
   font-size: 1em;
-  color: #BF4F24;
+  color: #596e79; 
 `;
 
 const Image = styled.img`
