@@ -5,8 +5,8 @@ import FooterLink from './support/FooterLink';
 import FooterHelpers from './FooterHelpers';
 
 const FooterWrapper = styled.section`
-  padding: 4em;
-  background: red;
+  padding: 1em;
+  background: #596e79;
 `;
 
 const FooterText = styled.h4`
