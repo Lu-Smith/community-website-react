@@ -15,6 +15,13 @@ const HeaderWrapper = styled.section`
   justify-content: center;
   height: 350px;
   gap: 5px;
+  width: 100vw;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 560px;
+    font-size: 14px;
+  }
 `;
 
 const Container = styled.div`
@@ -27,11 +34,9 @@ const Container = styled.div`
   width: 100%;
 
   &.first {
-  flex: 3;
-  }
-
-  &.second {
-  flex: 2;
+    @media (max-width: 768px) {
+      border-bottom: 2px solid black;
+    }
   }
 `;
 
@@ -63,6 +68,7 @@ const IntroContent = styled.p`
 
 const Image = styled.img`
   max-width: 100%;
+  min-width: 200px;
   max-height: 100%;
   object-fit: contain;
 `;
@@ -96,10 +102,16 @@ const Header: React.FC = () => {
           </IntroContainer>
           <Button>Get started</Button>
         </Container>
-        <Container className='second'>
+        <motion.div 
+          className='second'
+          initial={{ x: 100 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.6 }}>
+          <Container >
             <Button>Try it For Free</Button>
             <Image src={Community} alt="intro" />
-        </Container>
+          </Container>
+        </motion.div>
     </HeaderWrapper>
   )
 }
