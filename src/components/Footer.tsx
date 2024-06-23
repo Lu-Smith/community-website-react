@@ -5,16 +5,19 @@ import FooterLink from './support/FooterLink';
 import FooterHelpers from './FooterHelpers';
 
 const FooterWrapper = styled.section`
-  
+  width: 100vw;
 `;
 
 const FooterText = styled.h4`
-  text-align: center;
-  margin-top: 0 auto;
   font-size: 14px;
   padding: 1em  0;
   color: #596e79; 
   font-family: "Playwrite US Modern", cursive;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Footer: React.FC = () => {
