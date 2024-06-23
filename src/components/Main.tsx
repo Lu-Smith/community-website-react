@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import content from '../assets/content';
+import { motion } from "framer-motion";
 
 const Wrapper = styled.section`
   padding: 1em;
@@ -50,26 +51,33 @@ const Main: React.FC = () => {
   return (
     <Wrapper role='main'>
         {content.map((cont, index) => (
-          <SectorComponent role='sector' key={index}>
-            {!(index % 2)  ? 
-             <Image src={cont.img} alt='sector' role='image' />
-            :
-            ''
-            }
-            <ContentContainer>
-              <Title role='title'>
-                {cont.title}
-              </Title>
-              <Content role='content'>
-                {cont.content}
-              </Content>
-            </ContentContainer>
-            {index % 2 ? 
-             <Image src={cont.img} alt='sector' role='image' />
-            :
-            ''
-            }
-          </SectorComponent>
+          <motion.div
+             key={index}
+             initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
+             whileInView={{ x: 0, opacity: 1 }}
+             transition={{ duration: 1 }}
+           >
+            <SectorComponent role='sector'>
+              {!(index % 2)  ? 
+              <Image src={cont.img} alt='sector' role='image' />
+              :
+              ''
+              }
+              <ContentContainer>
+                <Title role='title'>
+                  {cont.title}
+                </Title>
+                <Content role='content'>
+                  {cont.content}
+                </Content>
+              </ContentContainer>
+              {index % 2 ? 
+              <Image src={cont.img} alt='sector' role='image' />
+              :
+              ''
+              }
+            </SectorComponent>
+          </motion.div>
         ))}
     </Wrapper>
   )
