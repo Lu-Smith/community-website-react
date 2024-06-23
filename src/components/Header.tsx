@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './support/Button';
 import Community from '../assets/media/community.svg';
+import { motion } from "framer-motion";
 
 const HeaderWrapper = styled.section`
   padding: 0.2em 0.5em;
@@ -73,7 +74,6 @@ const Header: React.FC = () => {
             <Button>Try it For Free</Button>
             <Image src={Community} alt="intro" />
         </Container>
-
     </HeaderWrapper>
   )
 }
