@@ -59,7 +59,14 @@ const Main: React.FC = () => {
            >
             <SectorComponent role='sector'>
               {!(index % 2)  ? 
-              <Image src={cont.img} alt='sector' role='image' />
+              <motion.div
+                initial={{ rotate: 0  }}
+                whileHover={{ rotate: -30 }}
+                transition={{ duration: 1 }}
+              >
+                <Image src={cont.img} alt='sector' role='image' />
+              </motion.div>
+              
               :
               ''
               }
@@ -72,7 +79,13 @@ const Main: React.FC = () => {
                 </Content>
               </ContentContainer>
               {index % 2 ? 
-              <Image src={cont.img} alt='sector' role='image' />
+               <motion.div
+                initial={{ rotate: 0  }}
+                whileHover={{ rotate: 30 }}
+                transition={{ duration: 1 }}
+              >
+                <Image src={cont.img} alt='sector' role='image' />
+              </motion.div>
               :
               ''
               }
