@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 const ButtonElement = styled.button`
 	background: #596e79;
@@ -23,7 +24,12 @@ const ButtonElement = styled.button`
 
 const Button: React.FC<{ children: string }> = ({ children }) => {
   return (
-    <ButtonElement>{children}</ButtonElement>
+    <motion.div
+           initial={{ scale: 1, opacity: 1 }}
+           whileHover={{ scale: 0.9, opacity: 0.8 }}
+           transition={{ duration: 0.6 }}>
+      <ButtonElement>{children}</ButtonElement>
+    </motion.div>
   )
 }
 
