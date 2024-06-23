@@ -23,7 +23,7 @@ interface FooterLinkProps {
 const FooterLink: React.FC<FooterLinkProps> = ({ href, target, children, role }) => {
   return (
     <motion.div
-    initial={{ scale: 1, opacity: 1 }}
+    initial={{ scale: 1, opacity: 1, y: 0 }}
     whileHover={{ scale: 1.2, opacity: 0.8 }}
     transition={{ duration: 0.6 }}>
       <FooterLinkElement href={href} target={target} role={role}>
