@@ -24,11 +24,20 @@ const SectorComponent = styled.div`
   justify-content: center;
   gap: 30px;
   height: 300px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 400px;
+  }
 `;
 
 const ContentContainer = styled.div`
   align-text: left;
   flex: 2;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const Title = styled.h2`
