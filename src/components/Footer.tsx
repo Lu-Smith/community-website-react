@@ -6,6 +6,10 @@ import FooterHelpers from './FooterHelpers';
 
 const FooterWrapper = styled.section`
   width: 100vw;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const FooterText = styled.h4`
@@ -18,6 +22,10 @@ const FooterText = styled.h4`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 const Footer: React.FC = () => {
