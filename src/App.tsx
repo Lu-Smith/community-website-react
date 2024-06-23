@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import styled from 'styled-components';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const AppWrapper = styled.div`
   background: #dfd3c3;
