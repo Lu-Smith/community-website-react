@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const AppWrapper = styled.div`
   background: #dfd3c3;
+  overflow-x: hidden;
 `;
 
 const App = () => {
