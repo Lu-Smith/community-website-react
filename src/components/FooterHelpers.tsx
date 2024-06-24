@@ -9,6 +9,8 @@ const HelpersWrapper = styled.div`
   justify-content: space-around;
   color: #f0ece2; 
   background: #596e79;
+  max-width: 900px;
+  margin: 0 auto;
 `;
 
 const ContactContainer = styled.ul`
