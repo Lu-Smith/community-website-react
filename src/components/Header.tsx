@@ -69,9 +69,17 @@ const IntroContent = styled.p`
 
 const Image = styled.img`
   max-width: 100%;
-  min-width: 200px;
+  min-width: 250px;
   max-height: 100%;
   object-fit: contain;
+  box-shadow: 4px 4px 2px rgba(89, 110, 121, 0.8);
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: 400ms all ease;
+
+  &:hover {
+  background-color: #596e79; ;
+  }
 `;
 
 const Header: React.FC = () => {
