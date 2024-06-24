@@ -15,7 +15,8 @@ const HeaderWrapper = styled.section`
   justify-content: center;
   height: 350px;
   gap: 5px;
-  width: 100vw;
+  max-width: 900px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     flex-direction: column;
