@@ -24,6 +24,8 @@ const SectorComponent = styled.div`
   justify-content: center;
   gap: 30px;
   height: 300px;
+  max-width: 900px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     flex-direction: column;
