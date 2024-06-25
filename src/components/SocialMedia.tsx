@@ -15,7 +15,7 @@ const SocialMediaContainer = styled.div`
   justify-content: center;
   gap: 40px;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 `;
 
 const SocialMedia: React.FC = () => {
