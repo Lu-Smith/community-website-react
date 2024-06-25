@@ -4,35 +4,35 @@ import Header from "./Header";
 
 describe("Header component", () => {
     it("renders without crashing", () => {
-      render(<Header />);
+      render(<Header id="top" />);
     });
   
     it("renders the intro title", () => {
-      render(<Header />);
+      render(<Header id="top" />);
       const introTitleElement = screen.getByText(/Build The Community Your Fans Will Love/i);
       expect(introTitleElement).toBeInTheDocument();
     });
   
     it("renders the intro content", () => {
-      render(<Header />);
+      render(<Header id="top" />);
       const introContentElement = screen.getByText(/The Community Hub re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion./i);
       expect(introContentElement).toBeInTheDocument();
     });
   
     it("renders the 'Get started' button", () => {
-      render(<Header />);
+      render(<Header id="top" />);
       const getStartedButton = screen.getByText(/Get started/i);
       expect(getStartedButton).toBeInTheDocument();
     });
   
     it("renders the 'Try it For Free' button", () => {
-      render(<Header />);
+      render(<Header id="top" />);
       const tryItForFreeButton = screen.getByText(/Try it For Free/i);
       expect(tryItForFreeButton).toBeInTheDocument();
     });
   
     it("renders the image with correct src and alt attributes", () => {
-      render(<Header />);
+      render(<Header id="top" />);
       const imageElement = screen.getByAltText(/intro/i) as HTMLImageElement;
       expect(imageElement).toBeInTheDocument();
       expect(imageElement.src).toContain('community.svg'); 
