@@ -82,11 +82,11 @@ const Image = styled.img`
   }
 `;
 
-const Header: React.FC = () => {
+const Header: React.FC<{ id: string }> = ({id}) => {
   return (
     <HeaderWrapper role='header'>
         <Container className='first'>
-          <motion.div>
+          <motion.div id={id} >
             <Title>
               C
               <motion.div 
